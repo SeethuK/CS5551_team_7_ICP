@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label align-self-center>User Name</ion-label>
+        </ion-item>
+  <ion-item>
+    <ion-input align-self-center type="text" [(ngModel)]="uname"  placeholder="Enter your UserName">
+
+    </ion-input>
+
+  </ion-item>
+<ion-item><ion-label align-self-center>Password</ion-label></ion-item>
+
+  <ion-item>
+    <ion-input align-self-center type="password" [(ngModel)]="pwd"  placeholder="Enter your password"></ion-input>
+  </ion-item>
+<button ion-button (click)="login()">LogIn</button>
+  <button ion-button (click)="register()">Register</button>
+
+
+
+</ion-content>
